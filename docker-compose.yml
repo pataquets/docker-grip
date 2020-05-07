@@ -1,0 +1,11 @@
+grip:
+  image: pataquets/grip
+  command:
+    - "/grip/"
+    - "0.0.0.0"
+  ports:
+    - 6419:6419
+  volumes:
+    - ./:/grip/:ro
+    # Cache is stored at /root/.grip/cache-{version}
+    #- /tmp/:/root/.grip/cache-4.5.2/
